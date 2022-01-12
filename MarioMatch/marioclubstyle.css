@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* header/sticky */
+header{
+    background-color: rgb(221, 46, 46);
+    height: 80px;
+    /* border needed */
+}
+
+header h1{
+    text-align: center;
+    font-size: 300%;
+    color: white;
+    width: 15%;
+    margin-left: 35%;
+    padding-top: 10px;
+    border-radius: 30px;
+    border: 3px solid #ffffff;
+}
+
+.Sticky{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* z-index as header was falling behind text box*/
+/* will have to revisit as can not solveissue of stacking stickys*/
+
+/* static background*/ 
+#FirstImage{
+    background-image: url(https://helmando.de/img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: absolute;
+}
+
+#FirstImage h1{ 
+    position: absolute; 
+    top: 10%; 
+    right: 60;
+    padding: 10%; 
+    width: 40%; 
+    font-size: 700%;
+    background-color: rgba(255, 208, 0, 0.897);
+    color: white;
+}
+
+
+/*nav bar*/
+.banner{
+    background-color: rgb(194, 179, 179);
+}
+
+li{
+    list-style: none;
+    margin: 15px;
+    padding-left: 15%;
+    display: inline-block;
+}
+
+.banner li a:visited,
+.banner li a:link{
+    padding: 8px 0px;
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+    font-size: 200%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.banner li a:hover,
+.banner li a:active{
+    color: rgb(221, 46, 46);
+}
+
+/* text block*/
+
+.About{
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-content: left;
+    padding-bottom: 20%;
+}
+
+.About h2{
+    color: rgb(221, 46, 46);
+    font-size: 500%;
+}
+
+.About h4{
+    font-size: 300%;
+    font-weight: bold;
+}
+
+.About p{
+    font-size: 280%;
+}
+
+
+/* pics*/
+.TwoPics img{
+    display: inline-block;
+    height: 40%;
+    width: 40%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.section{
+    padding-top: 10%;
+    z-index: 5;
+}
